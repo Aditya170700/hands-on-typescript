@@ -7,3 +7,4 @@ console.log(anak.nama);
 anak.printNamaInduk();
 anak.printAlamat();
 anak.printAlamatInduk();
+anak.getNamaPanggilanAnak();

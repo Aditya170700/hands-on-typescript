@@ -23,4 +23,8 @@ export class Anak extends Induk {
     // akses method printAlamat milik Induk
     super.printAlamat();
   }
+
+  getNamaPanggilanAnak(): void {
+      console.log("Anakku");
+  }
 }

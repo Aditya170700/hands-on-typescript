@@ -21,5 +21,8 @@ class Anak extends Induk_1.Induk {
         // akses method printAlamat milik Induk
         super.printAlamat();
     }
+    getNamaPanggilanAnak() {
+        console.log("Anakku");
+    }
 }
 exports.Anak = Anak;
