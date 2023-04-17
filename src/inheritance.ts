@@ -1,6 +1,10 @@
 class Induk {
   namaInduk = "Induk Anak";
 
+  constructor (param: string) {
+    console.log(param);
+  }
+
   printAlamat(): void {
     console.log("Alamat induk");
   }
@@ -8,6 +12,12 @@ class Induk {
 
 class Anak extends Induk {
   nama = "Anak Induk";
+
+  constructor (param: string) {
+    // constructor di children, harus memanggil constructor parent dengan method super()
+    super(`${param} untuk induk`);
+    console.log(param);
+  }
 
   printNamaInduk(): void {
     // akses properti namaInduk milik Induk
@@ -25,7 +35,7 @@ class Anak extends Induk {
   }
 }
 
-let anak = new Anak();
+let anak = new Anak("Ini param dari objek anak");
 
 console.log(anak.nama);
 
